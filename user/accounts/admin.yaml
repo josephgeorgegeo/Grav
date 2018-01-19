@@ -1,0 +1,28 @@
+email: geogeorge91@gmail.com
+fullname: Geo
+title: App
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+    cache: 'true'
+    configuration: 'true'
+    configuration_system: 'true'
+    configuration_site: 'true'
+    configuration_media: 'true'
+    configuration_info: 'true'
+    settings: 'true'
+    pages: 'true'
+    maintenance: 'true'
+    statistics: 'true'
+    plugins: 'true'
+    themes: 'true'
+    users: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$3bG98TMADBoEbU4N83mt9.1h7sdFfSm/7wtVkII6odOKIBn6rIyNC
+authorized: true
+twofa_secret: PJA7QTJSTOIF4LEWSW7DLFVOUMJ2YDX5
+language: en
+twofa_enabled: false

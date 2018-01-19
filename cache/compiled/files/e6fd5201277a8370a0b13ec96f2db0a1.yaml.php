@@ -1,0 +1,88 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => 'C:/wamp/www/Grav/user/plugins/shoppingcart-paypal/blueprints.yaml',
+    'modified' => 1515873410,
+    'data' => [
+        'name' => 'Shopping Cart PayPal Express Addon',
+        'version' => '1.1.2',
+        'description' => 'Add PayPal Express checkout to the Grav Shopping Cart Plugin. Requires a PayPal Premier / Business account.',
+        'icon' => 'shopping-cart',
+        'author' => [
+            'name' => 'Flavio Copes',
+            'email' => 'copesc@gmail.com',
+            'url' => 'https://flaviocopes.com'
+        ],
+        'homepage' => 'https://gravcart.com',
+        'keywords' => 'shoppingcart, ecommerce, e-commerce, plugin, shop, cart, paypal',
+        'readme' => 'https://gravcart.com/docs',
+        'bugs' => 'https://github.com/flaviocopes/grav-plugin-shoppingcart/issues',
+        'license' => 'MIT',
+        'testing' => true,
+        'dependencies' => [
+            0 => [
+                'name' => 'shoppingcart',
+                'version' => '~1.1'
+            ]
+        ],
+        'form' => [
+            'validation' => 'loose',
+            'fields' => [
+                'enabled' => [
+                    'type' => 'toggle',
+                    'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                    'highlight' => 1,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'PLUGIN_ADMIN.ENABLED',
+                        0 => 'PLUGIN_ADMIN.DISABLED'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'test_mode' => [
+                    'type' => 'toggle',
+                    'label' => 'Test mode',
+                    'highlight' => 0,
+                    'default' => 0,
+                    'options' => [
+                        1 => 'PLUGIN_ADMIN.ENABLED',
+                        0 => 'PLUGIN_ADMIN.DISABLED'
+                    ],
+                    'validate' => [
+                        'type' => 'bool'
+                    ]
+                ],
+                'payment.methods.paypal_express.name' => [
+                    'type' => 'hidden',
+                    'default' => 'PayPal Express'
+                ],
+                'payment.methods.paypal_express.username' => [
+                    'type' => 'text',
+                    'default' => '',
+                    'label' => 'Username',
+                    'size' => 'medium',
+                    'placeholder' => 'The PayPal Username',
+                    'help' => 'The PayPal Username'
+                ],
+                'payment.methods.paypal_express.password' => [
+                    'type' => 'text',
+                    'default' => '',
+                    'label' => 'Password',
+                    'size' => 'medium',
+                    'placeholder' => 'The PayPal Password',
+                    'help' => 'The PayPal Password'
+                ],
+                'payment.methods.paypal_express.signature' => [
+                    'type' => 'text',
+                    'default' => '',
+                    'label' => 'Signature',
+                    'size' => 'medium',
+                    'placeholder' => 'The PayPal Signature',
+                    'help' => 'The PayPal Signature'
+                ]
+            ]
+        ]
+    ]
+];

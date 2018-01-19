@@ -1,0 +1,6 @@
+enabled: true
+test_mode: true
+payment:
+  methods:
+    paypal_express:
+      name: 'PayPal Express'
